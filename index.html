@@ -3,99 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>TripWay - Home</title>
-</head>
-<body style="font-family: Poppins;">
 
-   <nav>    
-        <a href="../index.html">
-            <p>Home</p>
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="images/tripway.png" alt="Logo TripWay">
         </a>
 
-        <ul>
-            <li><a href="pages/destinos.html">Destinos</a></li>
-            <li><a href="pages/pacotes.html">Pacotes ou Serviços</a></li>
-            <li><a href="pages/contato.html">Contato  reserva</a></li>
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link active-link">Home</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pages/destinos.html" class="navbar-link">Destinos</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pages/pacotes.html" class="navbar-link">Pacotes</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pages/contato.html" class="navbar-link">Contato</a>
+            </li>
         </ul>
+
+
+
     </nav>
 
-    <header>
-         <h1 style="font-family: Playfair Display, serif;">
-  Explore o mundo com a TripWay
-</h1>
+    <header class="home-header">
+        <h1 class="home-title">Explore o mundo com a TripWay</h1>
 
-        <p>A TripWay é uma empresa especializada em transformar sonhos em experiências inesquecíveis.</p> 
+        <p class="home-description">A TripWay é uma empresa especializada em transformar sonhos em experiências inesquecíveis.</p>
+        <p class="home-description">Oferecemos destinos cuidadosamente selecionados, pacotes personalizados e suporte completo.</p>
+        <p class="home-description">Nosso objetivo é garantir que você viaje com tranquilidade, segurança e conforto.</p>
 
-         <p> Oferecemos destinos cuidadosamente selecionados, pacotes personalizados e suporte completo. </p>
-
-        <p>Nosso objetivo é garantir que você viaje com tranquilidade, segurança e conforto.</p>
-
-        <img src="images/tripway.png" alt="logo" width="600">
+        <img src="images/tripway.png" alt="Logo da TripWay" class="home-logo-image">
     </header>
 
-<main>
+    <main class="home-main">
 
-    <section>
-    <img 
-      src="images/banner.png" 
-      alt="Banner da TripWay " 
-      width="45%">
-  </section>
- 
-    <section>
-    <h2>Planeje sua viagem com a TripWay!</h2>
+        <section class="home-banner-section">
+            <img src="images/banner.png" alt="Banner da TripWay" class="home-banner-image">
+        </section>
 
-    <div>
-      <h3>🌍 Destinos</h3>
-      <p>Explore os melhores lugares do mundo com roteiros selecionados.</p>
-      <a href="pages/destinos.html">Explorar destinos</a>
-    </div>
+        <section class="home-planning-section" >
+            <h2 class="home-section-title">Planeje sua viagem com a TripWay!</h2>
 
-    <div>
-      <h3>✈️ Serviços</h3>
-      <p>Pacotes completos com conforto, segurança e praticidade.</p>
-      <a href="pages/pacotes.html">Ver serviços</a>
-    </div>
+            <div class="home-cards-container">
 
-    <div>
-      <h3>📩 Contato</h3>
-      <p>Fale com nossa equipe e comece a planejar sua viagem.</p>
-      <a href="pages/contato.html">Entrar em contato</a>
-    </div>
-    </section>
+                <div class="home-card">
+                    <h3 class="home-card-title">🌍 Destinos</h3>
+                    <p class="home-card-text">Explore os melhores lugares do mundo com roteiros selecionados.</p>
+                    <a href="pages/destinos.html" class="home-card-link">Explorar destinos</a>
+                </div>
 
-    <section>
-        <h2 style = "font-family: Playfair Display, serif;">Por que escolher a TripWay?</h2>
+                <div class=" home-card">
+                    <h3 class="home-card-title">✈️ Serviços</h3>
+                    <p class="home-card-text">Pacotes completos com conforto, segurança e praticidade.</p>
+                    <a href="pages/pacotes.html" class="home-card-link">Ver serviços</a>
+                </div>
 
-        <ul>
-             <li>Atendimento <strong>personalizado</strong></li>
-             <li><strong>Melhores</strong> destinos selecionados</li>
-             <li>Suporte durante <strong>toda</strong> a viagem</li>
-         </ul>
-    </section>
+                <div class="home-card">
+                    <h3 class="home-card-title">📩 Contato</h3>
+                    <p class="home-card-text">Fale com nossa equipe e comece a planejar sua viagem.</p>
+                    <a href="pages/contato.html" class="home-card-link">Entrar em contato</a>
+                </div>
 
-    <section>
-         <h3 style = "font-family: Playfair Display, serif;">Sobre</h3>
-         <p>Fundada com o propósito de conectar pessoas a novos lugares e culturas, a TripWay busca oferecer muito mais do que viagens: entregamos experiências únicas.
-         Com uma equipe apaixonada por turismo, trabalhamos para garantir conforto, praticidade e momentos inesquecíveis em cada jornada.</p>
-    </section>
+            </div>
+        </section>
 
-</main>
+        
+        <section class="home-why-section">
+            <h2 class="home-section-title">Por que escolher a TripWay?</h2>
 
-<br>
+            <ul class="home-why-list">
+                <li class="home-why-item">Atendimento <span class="home-highlight">personalizado</span></li>
+                <li class="home-why-item"><span class="home-highlight">Melhores</span> destinos selecionados</li>
+                <li class="home-why-item">Suporte durante <span class="home-highlight">toda</span> a viagem</li>
+            </ul>
+        </section>
 
-<hr>
+        <section class="home-about-section">
+            <h3 class="home-about-title">Sobre</h3>
 
-<footer>
-    <p>© 2026 TripWay — Todos os direitos reservados</p>
-    <p>Contato: contato@tripway.com</p>
-</footer> 
+            <p class="home-about-text">
+                Fundada com o propósito de conectar pessoas a novos lugares e culturas,
+                a TripWay busca oferecer muito mais do que viagens: entregamos experiências únicas.
+                Com uma equipe apaixonada por turismo, trabalhamos para garantir conforto,
+                praticidade e momentos inesquecíveis em cada jornada.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-text">© 2026 TripWay — Todos os direitos reservados</p>
+        <p class="footer-text">Contato: contato@tripway.com</p>
+    </footer>
 
 </body>
 </html>
