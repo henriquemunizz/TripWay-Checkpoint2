@@ -172,3 +172,140 @@ body {
 .packages-description {
     color: var(--muted-color);
 }
+
+:root {
+    --primary-color: #0984e3;
+    --primary-dark: #0652dd;
+    --secondary-color: #2d3436;
+    --background-color: #f0f6ff;
+    --card-color: #ffffff;
+    --text-color: #333333;
+    --muted-color: #636e72;
+    --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--card-color);
+    padding: 0 5%;
+    height: 10vh;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.navbar-link:hover {
+    color: var(--primary-color);
+}
+
+.active-link {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.packages-header {
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.packages-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.packages-description {
+    color: var(--muted-color);
+}
+
+.packages-main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.packages-section-title {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.packages-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.package-card {
+    background-color: var(--card-color);
+    width: 18rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+.package-card-title {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.package-card-image {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.package-card-text {
+    color: var(--muted-color);
+    line-height: 1.6;
+}
+
+.package-card-price {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.package-price-label {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
