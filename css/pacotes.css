@@ -78,3 +78,59 @@ body {
 .packages-description {
     color: var(--muted-color);
 }
+
+.packages-main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.packages-section-title {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.packages-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.package-card {
+    background-color: var(--card-color);
+    width: 18rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+.package-card-title {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.package-card-image {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.package-card-text {
+    color: var(--muted-color);
+    line-height: 1.6;
+}
+
+.package-card-price {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.package-price-label {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
