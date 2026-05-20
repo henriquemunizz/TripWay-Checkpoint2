@@ -10,6 +10,7 @@
 }
 
 
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--background-color);
@@ -57,4 +58,45 @@ body {
 .active-link {
     border-bottom: 3px solid var(--primary-color);
     color: var(--primary-color);
+}
+
+.home-header {
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.home-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.home-description {
+    color: var(--muted-color);
+    margin-bottom: 0.5rem;
+}
+
+.home-logo-image {
+    max-width: 90%;
+    width: 600px;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+
+.home-main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.home-banner-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.home-banner-image {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
 }
