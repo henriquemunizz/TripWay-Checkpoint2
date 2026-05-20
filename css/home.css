@@ -6,7 +6,10 @@
     --card-color: #ffffff;
     --text-color: #333333;
     --muted-color: #636e72;
-    --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
+
+    --shadow-nav: 0 4px 12px rgba(0, 0, 0, 0.25);
+    --shadow-card: 0 8px 16px rgba(0, 0, 0, 0.20);
+    --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.30);
 }
 
 * {
@@ -29,7 +32,7 @@ body {
     background-color: var(--card-color);
     padding: 0 5%;
     height: 10vh;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-nav);
 }
 
 .navbar-logo {
@@ -102,14 +105,11 @@ body {
 .home-banner-image {
     width: 45%;
     border-radius: 10px;
-    box-shadow: var(--shadow-md);
 }
 
 .home-planning-section {
     margin-bottom: 2rem;
 }
-
-
 
 .home-section-title {
     text-align: center;
@@ -131,11 +131,12 @@ body {
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-card);
 }
 
 .home-card:hover {
     border: 2px solid var(--primary-color);
+    box-shadow: var(--shadow-hover);
 }
 
 .home-card-title {
@@ -159,8 +160,13 @@ body {
     background-color: var(--card-color);
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-card);
     margin-bottom: 2rem;
+}
+
+.home-why-section:hover,
+.home-about-section:hover {
+    box-shadow: var(--shadow-hover);
 }
 
 .home-highlight {
@@ -192,7 +198,6 @@ body {
     background-color: var(--card-color);
     padding: 1.5rem;
     color: var(--muted-color);
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .footer-text {
