@@ -1,6 +1,8 @@
 :root {
     --primary-color: #0984e3;
     --primary-dark: #0652dd;
+    --orange-color: #fb6708;
+    --orange-dark: #d95505;
     --secondary-color: #2d3436;
     --background-color: #f0f6ff;
     --card-color: #ffffff;
@@ -59,12 +61,12 @@ body {
 }
 
 .navbar-link:hover {
-    color: var(--primary-color);
+    color: var(--orange-color);
 }
 
 .active-link {
-    border-bottom: 3px solid var(--primary-color);
-    color: var(--primary-color);
+    border-bottom: 3px solid var(--orange-color);
+    color: var(--orange-color);
 }
 
 .home-header {
@@ -135,7 +137,7 @@ body {
 }
 
 .home-card:hover {
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--orange-color);
     box-shadow: var(--shadow-hover);
 }
 
@@ -150,9 +152,13 @@ body {
 }
 
 .home-card-link {
-    color: var(--primary-color);
+    color: var(--orange-color);
     text-decoration: none;
     font-weight: 600;
+}
+
+.home-card-link:hover {
+    color: var(--orange-dark);
 }
 
 .home-why-section,
@@ -195,9 +201,10 @@ body {
 
 .site-footer {
     text-align: center;
-    background-color: var(--card-color);
+    background-color: var(--orange-color);
     padding: 1.5rem;
-    color: var(--muted-color);
+    color: var(--card-color);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .footer-text {

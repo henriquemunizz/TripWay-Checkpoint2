@@ -1,13 +1,18 @@
 :root {
     --primary-color: #0984e3;
     --primary-dark: #0652dd;
+    --orange-color: #fb6708;
+    --orange-dark: #d95505;
     --secondary-color: #2d3436;
     --background-color: #f0f6ff;
     --card-color: #ffffff;
     --text-color: #333333;
     --muted-color: #636e72;
     --border-color: #d6e4f5;
-    --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
+
+    --shadow-nav: 0 4px 12px rgba(0, 0, 0, 0.25);
+    --shadow-card: 0 8px 16px rgba(0, 0, 0, 0.20);
+    --shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.30);
 }
 
 * {
@@ -30,7 +35,7 @@ body {
     background-color: var(--card-color);
     padding: 0 5%;
     height: 10vh;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-nav);
 }
 
 .navbar-logo {
@@ -56,12 +61,12 @@ body {
 }
 
 .navbar-link:hover {
-    color: var(--primary-color);
+    color: var(--orange-color);
 }
 
 .active-link {
-    color: var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
+    color: var(--orange-color);
+    border-bottom: 3px solid var(--orange-color);
 }
 
 .contact-header {
@@ -98,7 +103,11 @@ body {
     background-color: var(--card-color);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-card);
+}
+
+.contact-form-section:hover {
+    box-shadow: var(--shadow-hover);
 }
 
 .contact-form-title {
@@ -136,12 +145,12 @@ body {
 .contact-input:focus,
 .contact-select:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: var(--orange-color);
 }
 
 .contact-button {
     padding: 0.8rem 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--orange-color);
     color: var(--card-color);
     border: none;
     border-radius: 5px;
@@ -152,7 +161,7 @@ body {
 }
 
 .contact-button:hover {
-    background-color: var(--primary-dark);
+    background-color: var(--orange-dark);
 }
 
 .back-button {
@@ -172,10 +181,10 @@ body {
 
 .site-footer {
     text-align: center;
-    background-color: var(--card-color);
+    background-color: var(--orange-color);
     padding: 1.5rem;
-    color: var(--muted-color);
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    color: var(--card-color);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .footer-text {
