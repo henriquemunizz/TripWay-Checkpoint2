@@ -9,7 +9,11 @@
     --shadow-md: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -99,4 +103,132 @@ body {
     width: 45%;
     border-radius: 10px;
     box-shadow: var(--shadow-md);
+}
+
+.home-planning-section {
+    margin-bottom: 2rem;
+}
+
+
+
+.home-section-title {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.home-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home-card {
+    background-color: var(--card-color);
+    width: 16rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+}
+
+.home-card:hover {
+    border: 2px solid var(--primary-color);
+}
+
+.home-card-title {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.home-card-text {
+    color: var(--muted-color);
+    margin-bottom: 1rem;
+}
+
+.home-card-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.home-why-section,
+.home-about-section {
+    background-color: var(--card-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+}
+
+.home-highlight {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.home-why-list {
+    margin-left: 1.5rem;
+}
+
+.home-why-item {
+    margin-bottom: 0.5rem;
+}
+
+.home-about-title {
+    font-family: "Playfair Display", serif;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.home-about-text {
+    color: var(--muted-color);
+    line-height: 1.6;
+}
+
+.site-footer {
+    text-align: center;
+    background-color: var(--card-color);
+    padding: 1.5rem;
+    color: var(--muted-color);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer-text {
+    margin-bottom: 0.3rem;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        height: 15vh;
+        gap: 0.5rem;
+    }
+
+    .navbar-logo img {
+        width: 120px;
+    }
+
+    .navbar-list {
+        gap: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .home-main {
+        width: 90%;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-banner-image {
+        width: 90%;
+    }
+
+    .home-card {
+        width: 100%;
+    }
 }
