@@ -62,3 +62,19 @@ body {
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
 }
+
+.packages-header {
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.packages-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.packages-description {
+    color: var(--muted-color);
+}
