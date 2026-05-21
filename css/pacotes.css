@@ -99,6 +99,7 @@ body {
 .packages-list {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
@@ -106,10 +107,14 @@ body {
 .package-card {
     background-color: var(--card-color);
     width: 18rem;
+    min-height: 395px;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: var(--shadow-card);
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .package-card:hover {
@@ -125,6 +130,8 @@ body {
 .package-card-image {
     width: 300px;
     max-width: 100%;
+    height: 135px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
 }
@@ -132,12 +139,14 @@ body {
 .package-card-text {
     color: var(--muted-color);
     line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .package-card-price {
     color: var(--secondary-color);
     font-weight: 600;
-    margin-top: 0.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
 }
 
 .package-price-label {
@@ -199,5 +208,6 @@ body {
 
     .package-card {
         width: 100%;
+        min-height: auto;
     }
 }
