@@ -2,78 +2,112 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-       <title>TripWay - Pacotes</title>       
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body style="font-family: Poppins;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripWay - Pacotes</title>
 
-    <nav>
-    <a href="../index.html">
-            <p>Home</p>
-    </a>
-        <ul>
-            <li><a href="destinos.html">Destinos</a></li>
-            <li><a href="pacotes.html">Pacotes ou Serviços</a></li>
-            <li><a href="contato.html">Contato e Reserva</a></li>
+    <link rel="stylesheet" href="../css/pacotes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="../index.html" class="navbar-logo">
+            <img src="../images/tripway.png" alt="Logo TripWay">
+        </a>
+
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="../index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="destinos.html" class="navbar-link">Destinos</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pacotes.html" class="navbar-link active-link">Pacotes</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="contato.html" class="navbar-link">Contato</a>
+            </li>
         </ul>
     </nav>
 
-<header>
-    <h1>Nossos Pacotes</h1>
-    <p>Serviços completos para você viajar com praticidade, conforto e tranquilidade.</p>
-    <br>
-</header>
+    <header class="packages-header">
+        <h1 class="packages-title">Nossos Pacotes</h1>
 
-<main>
-    <section id="pacote">
-        <h2>Lugares e preços</h2>
-        <br>
+        <p class="packages-description">
+            Serviços completos para você viajar com praticidade, conforto e tranquilidade.
+        </p>
+    </header>
 
-    <article class="pacote">
-        <div>
-      <h3>Barcelona - Espanha</h3>
-      <img src="../images/barcelona.jpg" alt="Visite a Catalunha, Barcelona" width="300">
-      <p>Viagem para Barcelona</p>
-      <p><strong>Preço</strong> R$ 4.200 por pessoa</p>
-       </div>
-    </article>
+    <main class="packages-main">
 
-   <article class="pacote">
-    <div>
-    <h3> Okinawa - Japão</h3>
-    <img src="../images/okinawa.jpg" alt="Praias tropicais com águas cristalinas em Okinawa, Japão" width="300">
-    <p>Venha conhecer o caribe Japonês com suas praias incriveis</p>
-    <p><strong>Preço</strong> R$ 5.000 por pessoa</p>
-    </div>
-</article>
+        <section class="packages-section">
+            <h2 class="packages-section-title">Lugares e preços</h2>
 
-<article class="pacote">
-     <div>
-    <h3>Paris - França</h3>
-    <img src="../images/paris.jpg" alt="Torre Eiffel e rio Sena,França" width="300">
-    <p>Conheça a capital Francesa, Paris com a grande torre Eiffel</p>
-    <p><strong>Preço</strong>R$ 5.000 por pessoa</p>
-     </div>
-</article>
+            <div class="packages-list">
 
+                <article class="package-card">
+                    <h3 class="package-card-title">Barcelona - Espanha</h3>
 
-     
-</section>
-    <a href="../index.html">Voltar</a>
-</main>
+                    <img src="../images/barcelona.jpg" alt="Visite Barcelona" class="package-card-image">
 
-<br>
+                    <p class="package-card-text">Viagem para Barcelona com roteiro cultural e turístico.</p>
 
-<hr>
+                    <p class="package-card-price">
+                        <span class="package-price-label">Preço:</span> R$ 4.200 por pessoa
+                    </p>
+                </article>
 
-<footer>
-    <p>© 2026 TripWay — Todos os direitos reservados</p>
-    <p>Contato: contato@tripway.com</p>
-</footer>
+                <article class="package-card">
+                    <h3 class="package-card-title">Okinawa - Japão</h3>
+
+                    <img src="../images/okinawa.jpg" alt="Praias de Okinawa" class="package-card-image">
+
+                    <p class="package-card-text">
+                        Venha conhecer o Caribe Japonês com suas praias incríveis
+                        e águas cristalinas.
+                    </p>
+
+                    <p class="package-card-price">
+                        <span class="package-price-label">Preço:</span> R$ 5.000 por pessoa
+                    </p>
+                </article>
+
+                <article class="package-card">
+                    <h3 class="package-card-title">Paris - França</h3>
+
+                    <img src="../images/paris.jpg" alt="Torre Eiffel em Paris" class="package-card-image">
+
+                    <p class="package-card-text">
+                        Conheça a capital francesa e visite pontos famosos,
+                        como a grande Torre Eiffel.
+                    </p>
+
+                    <p class="package-card-price">
+                        <span class="package-price-label">Preço:</span> R$ 5.000 por pessoa
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <a href="../index.html" class="back-button">Voltar</a>
+
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-text">© 2026 TripWay — Todos os direitos reservados</p>
+        <p class="footer-text">Contato: contato@tripway.com</p>
+    </footer>
 
 </body>
 </html>
-
-    
