@@ -2,78 +2,103 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-       <title>TripWay - Pacotes</title>       
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body style="font-family: Poppins;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripWay - Destinos</title>
 
-    <nav>
-    <a href="../index.html">
-            <p>Home</p>
-    </a>
-        <ul>
-            <li><a href="destinos.html">Destinos</a></li>
-            <li><a href="pacotes.html">Pacotes ou Serviços</a></li>
-            <li><a href="contato.html">Contato e Reserva</a></li>
+    <link rel="stylesheet" href="../css/destinos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="../index.html" class="navbar-logo">
+            <img src="../images/tripway.png" alt="Logo TripWay">
+        </a>
+
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="../index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="destinos.html" class="navbar-link active-link">Destinos</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pacotes.html" class="navbar-link">Pacotes</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="contato.html" class="navbar-link">Contato</a>
+            </li>
         </ul>
     </nav>
 
-<header>
-    <h1>Nossos Pacotes</h1>
-    <p>Serviços completos para você viajar com praticidade, conforto e tranquilidade.</p>
-    <br>
-</header>
+    <header class="destinations-header">
+        <h1 class="destinations-title">Destinos</h1>
 
-<main>
-    <section id="pacote">
-        <h2>Lugares e preços</h2>
-        <br>
+        <img src="../images/destinos.jpg" alt="Destinos" class="destinations-header-image">
 
-    <article class="pacote">
-        <div>
-      <h3>Barcelona - Espanha</h3>
-      <img src="../images/barcelona.jpg" alt="Visite a Catalunha, Barcelona" width="300">
-      <p>Viagem para Barcelona</p>
-      <p><strong>Preço</strong> R$ 4.200 por pessoa</p>
-       </div>
-    </article>
+        <p class="destinations-description">
+            Descubra lugares incríveis e transforme cada viagem em uma experiência inesquecível.
+            🌍✈️
+        </p>
+    </header>
 
-   <article class="pacote">
-    <div>
-    <h3> Okinawa - Japão</h3>
-    <img src="../images/okinawa.jpg" alt="Praias tropicais com águas cristalinas em Okinawa, Japão" width="300">
-    <p>Venha conhecer o caribe Japonês com suas praias incriveis</p>
-    <p><strong>Preço</strong> R$ 5.000 por pessoa</p>
-    </div>
-</article>
+    <main class="destinations-main">
 
-<article class="pacote">
-     <div>
-    <h3>Paris - França</h3>
-    <img src="../images/paris.jpg" alt="Torre Eiffel e rio Sena,França" width="300">
-    <p>Conheça a capital Francesa, Paris com a grande torre Eiffel</p>
-    <p><strong>Preço</strong>R$ 5.000 por pessoa</p>
-     </div>
-</article>
+        <section class="destinations-section">
+            <h2 class="destinations-section-title">Viagens populares para sua próxima aventura</h2>
 
+            <div class="destination-card">
+                <h3 class="destination-card-title">Barcelona - Espanha</h3>
 
-     
-</section>
-    <a href="../index.html">Voltar</a>
-</main>
+                <img src="../images/barcelona.jpg" alt="Cidade de Barcelona" class="destination-card-image">
 
-<br>
+                <p class="destination-card-text">
+                    Barcelona combina arte, arquitetura e vida vibrante à beira-mar,
+                    com arquitetura icônica e uma atmosfera descontraída.
+                </p>
+            </div>
 
-<hr>
+            <div class="destination-card">
+                <h3 class="destination-card-title">Paris - França</h3>
 
-<footer>
-    <p>© 2026 TripWay — Todos os direitos reservados</p>
-    <p>Contato: contato@tripway.com</p>
-</footer>
+                <img src="../images/paris.jpg" alt="Cidade de Paris" class="destination-card-image">
+
+                <p class="destination-card-text">
+                    Paris, a Cidade Luz, é sinônimo de romance, cultura e elegância,
+                    com marcos como a Torre Eiffel e museus mundialmente famosos.
+                </p>
+            </div>
+
+            <div class="destination-card">
+                <h3 class="destination-card-title">Okinawa - Japão</h3>
+
+                <img src="../images/okinawa.jpg" alt="Ilhas de Okinawa" class="destination-card-image">
+
+                <p class="destination-card-text">
+                    Okinawa, no Japão, encanta com praias paradisíacas, águas cristalinas
+                    e uma cultura única que mistura tradição e tranquilidade tropical.
+                </p>
+            </div>
+
+        </section>
+
+        <a href="../index.html" class="back-button">Voltar</a>
+
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-text">© 2026 TripWay — Todos os direitos reservados</p>
+        <p class="footer-text">Contato: contato@tripway.com</p>
+    </footer>
 
 </body>
 </html>
-
-    
