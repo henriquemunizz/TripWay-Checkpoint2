@@ -86,3 +86,41 @@ body {
 .destinations-description {
     color: var(--muted-color);
 }
+
+.destinations-main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.destinations-section-title {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.destination-card {
+    background-color: var(--card-color);
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem;
+}
+
+.destination-card-title {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.destination-card-image {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.destination-card-text {
+    color: var(--muted-color);
+    line-height: 1.6;
+}
