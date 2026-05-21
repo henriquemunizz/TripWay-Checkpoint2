@@ -150,3 +150,29 @@ body {
 .footer-text {
     margin-bottom: 0.3rem;
 }
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        height: 15vh;
+        gap: 0.5rem;
+    }
+
+    .navbar-logo img {
+        width: 120px;
+    }
+
+    .navbar-list {
+        gap: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .destinations-main {
+        width: 90%;
+    }
+
+    .destinations-title {
+        font-size: 2rem;
+    }
+}
